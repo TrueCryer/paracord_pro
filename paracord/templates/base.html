@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  
+  <!-- HEADER -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paracord Pro{% block title %}{% endblock %}</title>
+    <link href="/static/css/paracord.bootstrap.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Paracord Pro</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    {% block hero %}
+    {% endblock %}
+
+    <!-- CONTENT -->
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+  </body>
+</html>
